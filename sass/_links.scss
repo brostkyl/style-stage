@@ -8,6 +8,8 @@
   color: #fff;
   font-size: 1.125rem;
   overflow: hidden;
+  cursor: pointer;
+  pointer-events: auto;
 
   &:focus {
     position: fixed;
@@ -16,6 +18,8 @@
     width: auto;
     height: auto;
     padding: 0.5em;
+    cursor: pointer;
+    pointer-events: auto;
   }
 }
 
@@ -23,7 +27,8 @@
   min-height: 3em;
   background-color: var(--color-primary);
   color: #fff;
-  box-shadow: 0.18em 0.18em var(--color-secondary);
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 [class^="link"]:not(.link-codepen),
@@ -38,16 +43,22 @@
   line-height: 1;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto;
 
   &:hover,
   &:focus {
     transform: translate(-0.15em, -0.15em);
-    box-shadow: 0.3em 0.3em var(--color-secondary);
+    // box-shadow: 0.3em 0.3em var(--color-secondary);
+    cursor: pointer;
+    pointer-events: auto;
   }
 
   &:focus {
     outline-color: transparent;
     outline-style: solid;
+    cursor: pointer;
+    pointer-events: auto;
   }
 }
 
@@ -57,12 +68,21 @@
   min-height: 2.5em;
   background-color: var(--color-background);
   color: var(--color-primary);
+  outline: 2px solid var(--color-secondary);
+  outline-offset: -3px;
+  box-shadow: 3px 3px 6px var(--color-primary);
+  padding: 10px;
+  cursor: pointer;
+  pointer-events: auto;
+  
 }
 
 .link-codepen {
   display: block;
   margin-top: 3rem;
   font-size: var(--font-size-h4);
+  cursor: pointer;
+  pointer-events: all;
 
   &::before {
     position: absolute;
@@ -92,5 +112,8 @@
     height: 1em;
     margin-right: 0.25em;
     fill: currentColor;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
   }
 }

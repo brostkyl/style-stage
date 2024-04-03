@@ -2,10 +2,13 @@
   --logomark-height: 2em;
   --logomark-padding: 0;
 
+  border: 4px solid var(--color-secondary);
+  outline: 4px dashed var(--color-primary);
+  outline-offset: 5px;
+  margin: 1rem;
   position: relative;
   padding: 3rem 1rem;
-  background-color: var(--color-primary);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2fbf7' fill-opacity='1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-color: var(--color-primary-alt);
   background-repeat: repeat-x;
   background-position: center -34px;
   color: var(--color-light);
@@ -20,6 +23,11 @@
     background-color: var(--color-background);
     color: var(--color-primary);
     font-size: 3rem;
+    font-family: "Yesteryear", cursive;
+    border: 4px solid var(--color-secondary);
+    outline: 3px dashed var(--color-primary);
+    outline-offset: -9px;
+    box-shadow: 5px 5px 5px var(--color-primary);
     content: "S";
   }
 
@@ -32,6 +40,12 @@
 
   p a {
     color: inherit;
+    cursor: pointer;
+    pointer-events: auto;
+
+    &:hover{
+      color: var(--color-accent);
+    }
   }
 
   ul {
@@ -41,4 +55,45 @@
   .container > :last-child {
     margin-bottom: 0;
   }
+
+  // .container ul li .link-twittercontact{
+  //   // position: fixed;
+  //   // top: 50%;
+  //   // left: 50%;
+  //   // transform: translate(-50%, -50%);
+  // }
+
+  .container ul li{
+    display: inline-block;
+    color: var(--color-primary);
+    position: relative;
+    transition: color .55s;
+    z-index: 2;
+  }
+  
+    .container ul li :after{
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: var(--color-primary);
+      transition: all .55s;
+      z-index: -1;
+      border-color: var(--color-background);
+      // color: var(--color-background);
+    }
+  
+    .container ul li :hover{
+      // color: blue;
+      color: var(--color-background);
+      outline: 2px solid var(--color-background);
+      outline-offset: -3px;
+      // border-color: var(--color-background);
+    }
+  
+    .container ul li :hover:after{
+      width: 100%;
+    }
 }
