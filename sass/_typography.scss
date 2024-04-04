@@ -54,8 +54,13 @@ p {
 article .container {
   > ul:not(.features),
   > ol {
+    li {
+      border: 3px dashed var(--color-primary);
+
+    }
     > li + li {
       margin-top: 1rem;
+      
     }
   }
 

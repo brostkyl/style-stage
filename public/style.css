@@ -140,6 +140,10 @@ p {
   margin: 0 0 1rem;
 }
 
+article .container > ul:not(.features) li,
+article .container > ol li {
+  border: 3px dashed var(--color-primary);
+}
 article .container > ul:not(.features) > li + li,
 article .container > ol > li + li {
   margin-top: 1rem;
