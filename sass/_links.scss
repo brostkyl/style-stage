@@ -29,6 +29,8 @@
   color: #fff;
   cursor: pointer;
   pointer-events: auto;
+  border-radius: 5px;
+  
 }
 
 [class^="link"]:not(.link-codepen),
@@ -45,6 +47,7 @@
   text-decoration: none;
   cursor: pointer;
   pointer-events: auto;
+  box-shadow: 5px 5px 5px var(--color-secondary);
 
   &:hover,
   &:focus {
@@ -52,6 +55,8 @@
     // box-shadow: 0.3em 0.3em var(--color-secondary);
     cursor: pointer;
     pointer-events: auto;
+    outline: 2px solid var(--color-background);
+    outline-offset: (-3px);
   }
 
   &:focus {
@@ -106,14 +111,37 @@
   }
 }
 
+header div .link-github{
+  background-color: pink;
+}
+
 .link-github {
   svg {
     width: 1em;
     height: 1em;
     margin-right: 0.25em;
     fill: currentColor;
-    transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
+    color: var(--color-accent);
   }
 }
+
+  .link-github:is(:hover, :focus) svg {
+    animation: star 1.5s;
+  }
+  
+  @keyframes star {
+  
+    50% {
+      transform: perspective(2em) translateZ(0.5em) rotateX(180deg) rotateY(-180deg) scale(1);
+    }
+
+    75%{
+      transform: perspective(2em) translateZ(.75em) rotateX(180deg) rotateY(-185deg) scale(1.75);
+    }
+  
+    100% {
+      transform: perspective(2em) translateZ(0) rotateX(360deg) rotateY(-360deg);
+    }
+  }
+
