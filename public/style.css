@@ -144,11 +144,9 @@ article .container > ul:not(.features) > li + li,
 article .container > ol > li + li {
   margin-top: 1rem;
 }
-
 article .container * + h2 {
   margin-top: 4rem;
 }
-
 article .container * + h3 {
   margin-top: 2rem;
 }
@@ -171,22 +169,18 @@ blockquote {
   margin: 3rem 0;
   color: var(--color-primary);
 }
-
 blockquote > * {
   grid-area: blockquote;
 }
-
 blockquote p {
   position: relative;
   font-size: var(--font-size-h4);
   margin-bottom: 0;
   padding: 0.5em;
 }
-
 blockquote p strong {
   font-size: 1.15em;
 }
-
 blockquote::before {
   position: absolute;
   top: 0;
@@ -199,7 +193,6 @@ blockquote::before {
   transform: scale(1.1);
   content: "";
 }
-
 blockquote::after {
   grid-area: blockquote;
   color: #6f6ffd;
@@ -213,12 +206,12 @@ blockquote::after {
   transform: translate(25%, 50%) rotate(-5deg);
   transform-origin: bottom right;
 }
-
 @media (max-width: 60rem) {
   blockquote::after {
     transform: translate(25%, 55%) rotate(-5deg);
   }
 }
+
 #guidelines p:nth-of-type(1),
 #contribute p:nth-of-type(1) {
   font-size: var(--font-size-h4);
@@ -235,11 +228,9 @@ main {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
-
 main:focus {
   outline: none;
 }
-
 main h3 {
   color: var(--color-primary);
 }
@@ -287,14 +278,12 @@ header {
   color: var(--color-primary);
   text-align: center;
 }
-
 header h1 {
   display: inline-grid;
   min-height: var(--logomark-height);
   padding: var(--logomark-padding);
   place-content: center;
 }
-
 header h2 {
   max-width: 30ch;
 }
@@ -303,7 +292,6 @@ nav {
   width: 85%;
   margin: 0 auto;
 }
-
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -321,7 +309,6 @@ nav ul {
   outline: 4px dashed var(--color-primary);
   outline-offset: 5px;
 }
-
 nav ul a {
   display: inline-grid;
   padding: 1rem;
@@ -331,19 +318,16 @@ nav ul a {
   cursor: pointer;
   pointer-events: auto;
 }
-
 nav ul a::before {
   width: 100%;
   height: 0.33em;
   opacity: 0.15;
   content: "";
 }
-
 nav ul a:hover::before, nav ul a:focus::before {
   opacity: 1;
   color: var(--color-secondary);
 }
-
 nav ul li {
   margin: 0.25rem;
 }
@@ -351,7 +335,6 @@ nav ul li {
 #about section:nth-child(2) {
   position: relative;
 }
-
 #about section:nth-child(2) p:nth-of-type(2) {
   align-self: center;
   margin-top: 2rem;
@@ -360,7 +343,6 @@ nav ul li {
   font-weight: var(--font-weight-strong);
   text-align: center;
 }
-
 #about section:nth-child(2) ul {
   display: flex;
   flex-wrap: wrap;
@@ -369,13 +351,11 @@ nav ul li {
   padding: 0;
   list-style: none;
 }
-
 #about section:nth-child(2) ul li {
   margin: 0.25em;
   padding: 0.25em 0.5em;
   background-color: var(--color-light);
 }
-
 #about section:nth-child(2)::before {
   position: absolute;
   top: 60%;
@@ -390,23 +370,21 @@ nav ul li {
   content: "";
   z-index: -1;
 }
-
 @media (max-width: 35rem) {
   #about section:nth-child(2)::before {
     transform: scale(2) translate(-25%, -25%);
   }
 }
+
 #guidelines {
   background-image: linear-gradient(var(--color-primary-alt) 20%, transparent);
 }
-
 #guidelines h3 {
   display: inline-block;
   transform: rotate(-8deg) translateX(-10%);
   background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
 }
-
-@supports (-webkit-background-clip: text) or (background-clip: text) or (-webkit-background-clip: text) {
+@supports (background-clip: text) or (-webkit-background-clip: text) {
   #guidelines h3 {
     -webkit-background-clip: text;
     background-clip: text;
@@ -418,11 +396,10 @@ nav ul li {
     transform: rotate(-8deg) translateX(-30%);
   }
 }
-@supports (-webkit-background-clip: text) or (background-clip: text) or (-webkit-background-clip: text) {
+@supports (background-clip: text) or (-webkit-background-clip: text) {
   #guidelines p:nth-of-type(2) {
     position: relative;
   }
-
   #guidelines p:nth-of-type(2)::before {
     position: absolute;
     top: 0;
@@ -495,12 +472,10 @@ nav ul li {
   margin: 5vh auto;
   text-align: center;
 }
-
 #files h3 {
   height: 0;
   opacity: 0;
 }
-
 #files .container {
   display: inline-block;
   padding: 5vmin;
@@ -508,11 +483,9 @@ nav ul li {
   background-color: var(--color-background);
   text-align: center;
 }
-
 #files .container a:not(:last-child) {
   margin: 0.5rem;
 }
-
 #files .container a:not(:last-child):not(.link-codepen) {
   font-size: clamp(1.5rem, 4vw, 2rem);
 }
@@ -526,7 +499,6 @@ nav ul li {
     * @link http://www.heropatterns.com/
     */
 }
-
 .features li {
   border-radius: 10%;
   display: grid;
@@ -541,7 +513,6 @@ nav ul li {
   outline: 1px solid black;
   outline-offset: 2px;
 }
-
 .features li > span {
   display: grid;
   place-content: center;
@@ -554,7 +525,6 @@ nav ul li {
   background-color: var(--color-primary-alt);
   line-height: 1.1;
 }
-
 .features li > span a {
   color: inherit;
   font-size: 1.3rem;
@@ -563,7 +533,6 @@ nav ul li {
   cursor: pointer;
   pointer-events: auto;
 }
-
 .features li > span a::before {
   position: absolute;
   top: 0;
@@ -572,7 +541,6 @@ nav ul li {
   height: 100%;
   content: "";
 }
-
 .features li > span span:nth-child(2) {
   position: relative;
 }
@@ -581,7 +549,6 @@ nav ul li {
   margin: 5vh 0 20vh;
   text-align: center;
 }
-
 #styles h2 {
   color: var(--color-primary);
 }
@@ -590,7 +557,6 @@ nav ul li {
 .features.patterned li {
   background-image: linear-gradient(var(--color-secondary), transparent);
 }
-
 @media (min-width: 515px) and (max-width: 765px) {
   #styles .features li:nth-child(-n+3),
 .features.patterned li:nth-child(-n+3) {
@@ -603,12 +569,10 @@ nav ul li {
 .features.patterned li:nth-child(2) {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%23d24041' fill-opacity='0.4'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
-
 #styles .features li:nth-child(3),
 .features.patterned li:nth-child(3) {
   background-image: linear-gradient(var(--color-primary-alt), transparent);
 }
-
 #styles .features::after,
 .features.patterned::after {
   position: absolute;
@@ -632,25 +596,21 @@ nav ul li {
   padding: 1.25rem;
   z-index: 1;
 }
-
 .profile h4 {
   margin: 0;
   color: var(--color-secondary);
   text-align: center;
 }
-
 .profile .container {
   display: grid;
   justify-items: center;
   grid-gap: 1rem;
 }
-
 .profile .container > a {
   min-height: 2em;
   border: 2px solid currentColor;
   color: var(--color-secondary);
 }
-
 .profile ul {
   display: flex;
   flex-wrap: wrap;
@@ -659,27 +619,22 @@ nav ul li {
   padding: 0;
   list-style: none;
 }
-
 .profile ul li {
   display: flex;
   padding: 0.45em;
 }
-
 .profile ul li span:nth-child(1) {
   width: auto;
   margin-right: 0.25em;
   font-weight: var(--font-weight-strong);
 }
-
 .profile ul li span:nth-child(2) {
   flex-grow: 1;
   word-break: break-word;
 }
-
 .profile ul li span:nth-child(2) a {
   color: inherit;
 }
-
 @media (min-width: 180ch) {
   .profile {
     position: fixed;
@@ -691,20 +646,18 @@ nav ul li {
     background-color: var(--color-light);
     box-shadow: 0 2px 5px rgba(84, 83, 79, 0.15);
   }
-
   .profile ul {
     justify-content: unset;
   }
-
   .profile ul li {
     padding: 0;
   }
-
   .profile ul li span:nth-child(1) {
     width: 8ch;
     margin-right: 0;
   }
 }
+
 .page-footer {
   --logomark-height: 2em;
   --logomark-padding: 0;
@@ -719,7 +672,6 @@ nav ul li {
   background-position: center -34px;
   color: var(--color-light);
 }
-
 .page-footer::before {
   display: inline-grid;
   min-height: var(--logomark-height);
@@ -739,32 +691,26 @@ nav ul li {
   box-shadow: 5px 5px 5px var(--color-primary);
   content: "S";
 }
-
 .page-footer p:first-child {
   margin-top: 3rem;
   font-weight: var(--font-weight-strong);
   letter-spacing: 0.03em;
   text-align: center;
 }
-
 .page-footer p a {
   color: inherit;
   cursor: pointer;
   pointer-events: auto;
 }
-
 .page-footer p a:hover {
   color: var(--color-accent);
 }
-
 .page-footer ul {
   grid-template-columns: repeat(auto-fit, minmax(12ch, auto));
 }
-
 .page-footer .container > :last-child {
   margin-bottom: 0;
 }
-
 .page-footer .container ul li {
   display: inline-block;
   color: var(--color-primary);
@@ -772,7 +718,6 @@ nav ul li {
   transition: color 0.55s;
   z-index: 2;
 }
-
 .page-footer .container ul li :after {
   position: absolute;
   content: "";
@@ -785,13 +730,11 @@ nav ul li {
   z-index: -1;
   border-color: var(--color-background);
 }
-
 .page-footer .container ul li :hover {
   color: var(--color-background);
   outline: 2px solid var(--color-background);
   outline-offset: -3px;
 }
-
 .page-footer .container ul li :hover:after {
   width: 100%;
 }
@@ -809,7 +752,6 @@ nav ul li {
   cursor: pointer;
   pointer-events: auto;
 }
-
 .skip-link:focus {
   position: fixed;
   top: 0;
@@ -844,7 +786,6 @@ nav ul li {
   cursor: pointer;
   pointer-events: auto;
 }
-
 [class^=link]:not(.link-codepen):hover, [class^=link]:not(.link-codepen):focus,
 .profile .container > a:hover,
 .profile .container > a:focus {
@@ -852,7 +793,6 @@ nav ul li {
   cursor: pointer;
   pointer-events: auto;
 }
-
 [class^=link]:not(.link-codepen):focus,
 .profile .container > a:focus {
   outline-color: transparent;
@@ -881,7 +821,6 @@ nav ul li {
   cursor: pointer;
   pointer-events: all;
 }
-
 .link-codepen::before {
   position: absolute;
   padding-right: 1.25em;
@@ -898,18 +837,18 @@ nav ul li {
 .link-allstyles {
   font-size: var(--font-size-h4);
 }
-
 @media (max-width: 400px) {
   .link-allstyles {
     margin-left: 6rem;
   }
 }
+
 .link-github svg {
   width: 1em;
   height: 1em;
   margin-right: 0.25em;
   fill: currentColor;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
-
-/*# sourceMappingURL=style.css.map */
