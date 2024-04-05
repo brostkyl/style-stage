@@ -319,9 +319,8 @@ nav ul a::before {
   opacity: 0.15;
   content: "";
 }
-nav ul a:hover::before, nav ul a:focus::before {
-  opacity: 1;
-  color: var(--color-secondary);
+nav ul a:hover {
+  text-shadow: 5px 5px 5px var(--color-primary);
 }
 nav ul li {
   margin: 0.25rem;
@@ -671,16 +670,24 @@ nav ul li {
 
 .skip-link {
   position: absolute;
-  top: auto;
+  top: 0.5rem;
   left: -10000px;
-  width: 1px;
-  height: 1px;
+  margin: 0.5rem 0.5rem 0.5rem;
+  padding: 1rem;
   background-color: var(--color-secondary);
   color: #fff;
   font-size: 1.125rem;
   overflow: hidden;
   cursor: pointer;
   pointer-events: auto;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 3px solid var(--color-primary-alt);
+  outline: 3px dashed var(--color-primary);
+  outline-offset: 2px;
+}
+.skip-link:hover {
+  text-shadow: 5px 5px 5px var(--color-primary);
 }
 .skip-link:focus {
   position: fixed;
@@ -775,10 +782,6 @@ nav ul li {
   .link-allstyles {
     margin-left: 6rem;
   }
-}
-
-header div .link-github {
-  background-color: pink;
 }
 
 .link-github svg {
