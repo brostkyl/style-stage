@@ -82,6 +82,13 @@ strong {
 a {
   font-family: "DM Sans", sans-serif;
   color: var(--color-anchor);
+  cursor: pointer;
+  pointer-events: auto;
+
+  &:hover{
+    color: var(--color-secondary)
+  }
+
 }
 
 blockquote {
@@ -92,6 +99,7 @@ blockquote {
   padding: 0;
   margin: 3rem 0;
   color: var(--color-primary);
+  // background-color: pink;
 
   > * {
     grid-area: blockquote;
@@ -118,6 +126,7 @@ blockquote {
     outline: 4px dashed var(--color-primary);
     outline-offset: 5px;
     transform: scale(1.1);
+    // background-color: var(--color-primary);
     content: "";
   }
 

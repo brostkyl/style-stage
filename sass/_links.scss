@@ -18,6 +18,7 @@
 
   &:hover{
     text-shadow: 5px 5px 5px var(--color-primary);
+    color: var(--color-background);
   }
 
   &:focus {
@@ -40,6 +41,7 @@
   pointer-events: auto;
   border-radius: 5px;
 }
+
 
 [class^="link"]:not(.link-codepen),
 .profile .container > a {

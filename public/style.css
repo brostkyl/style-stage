@@ -165,6 +165,12 @@ strong {
 a {
   font-family: "DM Sans", sans-serif;
   color: var(--color-anchor);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+a:hover {
+  color: var(--color-secondary);
 }
 
 blockquote {
@@ -362,6 +368,7 @@ nav ul a::before {
 
 nav ul a:hover {
   text-shadow: 5px 5px 5px var(--color-primary);
+  color: var(--color-background);
 }
 
 nav ul li {
@@ -652,6 +659,10 @@ nav ul li {
   color: inherit;
 }
 
+.profile ul li span:nth-child(2) a:hover {
+  color: var(--color-secondary);
+}
+
 @media (min-width: 180ch) {
   .profile {
     position: fixed;
@@ -770,6 +781,7 @@ nav ul li {
 
 .skip-link:hover {
   text-shadow: 5px 5px 5px var(--color-primary);
+  color: var(--color-background);
 }
 
 .skip-link:focus {
